@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --light-blue: #0089b7;
+  --medium-blue: #003D62;
+  --dark-color: #003251;
+  --yellow-color: #fff700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 1rem = 16px
+apply font-size: 62.5%; to html tag
+it becomes 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+body, html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--light-blue);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.top-nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+}
+.left-side {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0 3rem;
+}
+.right-side {
+  font-size: 2rem;
+}
+.right-side a {
+  text-decoration: none;
+  color: white;
+  margin-right: 3rem;
+  font-weight: 400;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+.right-side a:hover {
+  border-bottom: 3px solid yellow;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hero Section */
+
+#hero {
+  background: var(--medium-blue);
+
+}
+
+#hero .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 90vh;
+}
+.hero-image img {
+  width: 320px;
+  border-radius: 130px;
+}
+.hero-text {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+}
+.hero-text h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hi-text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #FDFF9E;
+}
+.name-text {
+  font-size: 5rem;
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end) 2s infinite, blink-caret 0.75s step-end 3s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Main Section */
+
+#project {
+  font-size: 4rem;
+  padding: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  background:var(--dark-color);
+
+}
+
+.main-section {
+  background:var(--dark-color);
+  gap: 3rem;
+}
+.all-cards {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1300px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.card {
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.card-text {
+  padding: 2rem;
+  position:relative;
+  text-align: center;
+  font-size: 2rem;
+  top: -6.2rem;
+  margin-bottom: -6.2rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(60px);
+}
+.card:hover .card-text {
+  background: white;
+  color: var(--dark-color);
+  transform: translateY(0px);
+}
+
+/* Contact Section */
+
+#contact {
+  background-color: var(--medium-blue);
+  gap: 1rem;
+}
+#contact .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+#contact h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+.contact-social {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.contact-social a {
+  color: white;
+  text-decoration: none;
+}
+.contact-way {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-way i {
+  font-size: 3rem;
+}
+.contact-email-mobile {
+  max-width: 400px;
+  display: flex;
+  font-size: 2rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+
+/* Footer */
+
+footer {
+  background: var(--dark-color);
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Media Quries */
+
+@media (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
+  .container {
+    flex-direction: column;
+  }
+ 
+  /* .hero-text {
+    font-size: 1rem;
+  }
+  .hi-text {
+    font-size: 5rem;
+  }
+  .name-text {
+    font-size: 4rem;
+  }
+  .hero-text h2 {
+    font-size: 3.7rem;
+  }
+  .my-projects h2 {
+    font-size: 4rem;
+  } */
+}
+@media (max-width:500px) {
+  html {
+    font-size: 32%;
+  }
+
+  .contact-email-mobile {
+    margin-bottom: 2rem;
+  }
+  #contact .container {
+    height: 100%;
+  }
+}

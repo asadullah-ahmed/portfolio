@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html, body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.4rem;
+}
+ul {
+  list-style: none;
+}
+header {
+  position:sticky;
+  top: 0;
+  background: #e5e5e5;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav ul  {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  font-size: 1.8rem;
+}
+nav ul li:hover {
+  border-bottom: 2px solid yellow;
+}
+nav i {
+  font-size: 2.5rem;
+}
+
+/* Hero Section */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.hero-content h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+}
+.hero-content h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.hero-image img {
+  border-radius: 5rem;
+}
+
+/* Long Card Section */
+
+.h-card {
+  display: flex;
+  margin: 2rem 1rem;
+  box-shadow: 0 5px 4px rgba(211, 211, 211, 0.327);
+  align-items: center;
+  border: 2px solid #e2e2e2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+.read-btn {
+  all: unset;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+.read-btn:hover {
+  border-bottom: 1px solid #ccc;
+}
+
+/*  v-card */
+
+.v-card {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 320px;
+  gap: 2rem;
+  box-shadow: 0 5px 4px rgba(211, 211, 211, 0.327);
+  border: 2px solid #e2e2e2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.v-card:hover {
+  box-shadow: 6px 6px 6px #e2e2e2;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+/* Bottom button */
+
+.see-more-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1200px;
+  margin-right: 10px;
+  
+}
+.see-more-btn button {
+  background-color: #6B46C1;
+  color: white;
+  padding: 12px 30px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 6px;
+  gap: 9px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Post Page */
+
+.banner-image img {
+  width: 100%;
+}
+.post h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.about-author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.post hr {
+  margin: 3rem 0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
