@@ -218,7 +218,8 @@ header {
   margin: 0 auto;
   gap: 2rem;
 }
-.contact-social a {
+.contact-social a,
+ .contact-way a  {
   color: white;
   text-decoration: none;
 }
